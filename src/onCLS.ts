@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {onBFCacheRestore} from './lib/bfcache.js';
+import {onBFCacheRestore} from './lib/bfcache.js'; 
 import {initMetric} from './lib/initMetric.js';
 import {observe} from './lib/observe.js';
 import {onHidden} from './lib/onHidden.js';

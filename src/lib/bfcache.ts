@@ -23,7 +23,7 @@ let bfcacheRestoreTime = -1;
 export const getBFCacheRestoreTime = () => bfcacheRestoreTime;
 
 export const onBFCacheRestore = (cb: onBFCacheRestoreCallback) => {
-  addEventListener('pageshow', (event) => {
+  addEventListener('pageshow', (event) => { // 监听页面的展示事件，当tab出现时，事件会被触发
     if (event.persisted) {
       bfcacheRestoreTime = event.timeStamp;
       cb(event);
